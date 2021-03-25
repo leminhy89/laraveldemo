@@ -65,6 +65,7 @@ class RolesController extends Controller
      */
     public function edit($id)
     {
+        //add comment
         $role = Role::find($id);
         return view('roles.edit', compact('role'));
     }
